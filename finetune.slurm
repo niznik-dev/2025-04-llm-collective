@@ -13,10 +13,10 @@
 ##SBATCH --partition=<partition>
 
 module purge
-module load anaconda3/2024.10
+module load anaconda3/2025.6
 conda activate 202504_llm
 
-mkdir -p /home/$USER/scratch/llmc_test_run_1/logs/wandb
+mkdir -p /scratch/gpfs/CSES/niznik/demo_test_run_1/logs/wandb
 tune run lora_finetune_single_device \
-    --config /home/$USER/scratch/GitHub/2025-04-llm-collective/finetune.yaml \
+    --config /scratch/gpfs/CSES/niznik/GitHub/2025-04-llm-collective/finetune.yaml \
     epochs=1
