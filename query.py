@@ -4,7 +4,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 USE_PIPELINE = False
 
-MODEL_PATH = f"/scratch/gpfs/CSES/niznik/demo_test_run_1/epoch_0/"
+# Switch between the base model and the fine-tuned model to see differences in output!
+MODEL_PATH = f"/scratch/gpfs/MSALGANIK/pretrained-llms/Llama-3.2-1B-Instruct/"
+#MODEL_PATH = f"/scratch/gpfs/CSES/niznik/demo_test_run_1/epoch_0/"
 
 QUERIES = [
     "Linking macrophage metabolism to function in the tumor microenvironment.",
