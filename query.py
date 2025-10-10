@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 
 USE_PIPELINE = False
 
-MODEL_PATH = f"/home/{os.environ.get('USER')}/scratch/llmc_test_run_1/epoch_0/"
+MODEL_PATH = f"/scratch/gpfs/CSES/niznik/demo_test_run_1/epoch_0/"
 
 QUERIES = [
     "Linking macrophage metabolism to function in the tumor microenvironment.",
