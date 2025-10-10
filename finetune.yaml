@@ -8,9 +8,9 @@
 my_wandb_project: "202504_llm-collective"
 my_wandb_run_name: "test_run_1"
 
-output_dir: /home/$USER/scratch/llmc_${my_wandb_run_name}/
-input_dir: /home/$USER/scratch/GitHub/2025-04-llm-collective/  # My convention but useful to keep!
-model_dir: /home/$USER/scratch/torchtune_models/  # If new, use `tune download meta-llama/<model_name> --output-dir <output_dir> --hf-token <hf-token>` to first download the model to this location!
+output_dir: /scratch/gpfs/CSES/niznik/demo_${my_wandb_run_name}/
+input_dir: /scratch/gpfs/CSES/niznik/GitHub/2025-04-llm-collective/  # My convention but useful to keep!
+model_dir: /scratch/gpfs/MSALGANIK/pretrained-llms/  # If new, use `tune download meta-llama/<model_name> --output-dir <output_dir> --hf-token <hf-token>` to first download the model to this location!
 
 batch_size: 4
 
