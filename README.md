@@ -5,11 +5,12 @@ Finetuning a Llama model with PubMed data
 
 ```
 On della-gpu:
-module load anaconda3/2024.10
-conda create -n 202504_llm pytorch torchvision pytorch-cuda=12.4 -c pytorch -c nvidia
-conda activate 202504_llm
+module load anaconda3/2025.6
+conda create -n ttdemo python=3.13
+conda activate ttdemo
+pip3 install torch --index-url https://download.pytorch.org/whl/cu126
+pip install accelerate torchao torchtune transformers wandb peft
 conda install sentencepiece -c conda-forge
-pip install accelerate torchao torchtune transformers wandb
 ```
 
 If you run into errors with the above, try:
